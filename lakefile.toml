@@ -13,3 +13,12 @@ scope = "leanprover-community"
 
 [[lean_lib]]
 name = "MOP"
+
+[package]
+name = "your_project"
+lean_version = "leanprover/lean4:nightly"
+require = ["MOP"]
+
+[dependencies.MOP]
+git = "https://github.com/hrmacbeth/math2001.git"
+rev = "main"
