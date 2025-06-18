@@ -1,0 +1,27 @@
+name = "MoP"
+version = "0.1.0"
+keywords = ["math"]
+
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[[lean_lib]]
+name = "MOP"
+
+
+
+[[dependencies]]
+name = "math2001_course"
+git = "https://github.com/hrmacbeth/math2001.git"
+rev = "main"
+
+# [[dependencies]]
+# name = "mathlib"
+# git = "https://github.com/leanprover-community/mathlib4.git"
+# rev = "0e9bcbf7a1008b0b88cad6c59abf12bed4cfe3b8"
